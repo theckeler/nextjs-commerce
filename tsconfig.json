@@ -22,6 +22,6 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/layout.js", "app/page.js", "components/layout/header/index.js", "components/layout/footer.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/layout.js", "app/page.js", "components/layout/header/index.js", "components/layout/footer.js", "components/layout/product-grid-items.js"],
   "exclude": ["node_modules"]
 }
