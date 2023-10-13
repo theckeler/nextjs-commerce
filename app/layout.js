@@ -1,10 +1,11 @@
+import '@/styles/globals.css';
+import Footer from 'components/layout/footer';
 import Navbar from 'components/layout/header';
 import { Suspense } from 'react';
-import './globals.css';
 
 const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
   ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-  : 'http://localhost:3000';
+  : 'http://localhost:3003';
 
 export const metadata = {
   metadataBase: new URL(baseUrl),
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
         <Suspense>
           <main>{children}</main>
         </Suspense>
+        <Footer />
       </body>
     </html>
   );

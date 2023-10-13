@@ -1,0 +1,70 @@
+[
+	{
+		"title": {
+			"copy": "About Us",
+			"className": "2xl:text-lg"
+		},
+		"links": [
+			{ "title": "Our Story" },
+			{ "title": "How-To Articles", "url": "/articles/" },
+			{ "title": "Special Offers" },
+			{ "title": "News" },
+			{ "title": "Financing" },
+			{ "title": "Our Engine Advantage" }
+		],
+		"className": null,
+		"row": false,
+		"alignRight": false
+	},
+	{
+		"title": {
+			"copy": "Owner's Center",
+			"className": "2xl:text-lg"
+		},
+		"links": [
+			{ "title": "Product Recalls" },
+			{ "title": "Operator's Manuals" },
+			{ "title": "Product Registration" },
+			{ "title": "Service Locator" },
+			{ "title": "Find a Part" },
+			{ "title": "Lookup Parts via Diagram" },
+			{ "title": "Cub Cadet Gear" },
+			{ "title": "Extended Warranty" }
+		],
+		"className": null,
+		"row": false,
+		"alignRight": false
+	},
+	{
+		"title": {
+			"copy": "Independent Dealers",
+			"className": "2xl:text-lg"
+		},
+		"links": [
+			{ "title": "Find a Dealer" },
+			{ "title": "Dealer Delivery or Pick-Up" },
+			{ "title": "Become a Dealer" },
+			{ "title": "Dealer Advantage" },
+			{ "title": "Right Parts Pledge" }
+		],
+		"className": null,
+		"row": false,
+		"alignRight": false
+	},
+	{
+		"title": {
+			"copy": "Customer Service",
+			"className": "2xl:text-lg"
+		},
+		"links": [
+			{ "title": "(877) 428 2349" },
+			{ "title": "Track Order" },
+			{ "title": "My Account" },
+			{ "title": "FAQs & Support" },
+			{ "title": "Product Safety" }
+		],
+		"className": null,
+		"row": false,
+		"alignRight": false
+	}
+]

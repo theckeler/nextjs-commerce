@@ -14,14 +14,45 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "noUncheckedIndexedAccess": true,
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/buttons/*": ["components/buttons/*"],
+      "@/tabs/*": ["components/Tabs/*"],
+      "@/cards/*": ["components/Cards/*"],
+      "@/icons/*": ["components/Icons/*"],
+      "@/data/*": ["data/*"],
+      "@/cta/*": ["components/Heros/*"],
+      "@/product/*": ["components/Product/*"],
+      "@/addtocart/*": ["components/AddCart/*"],
+      "@/header/*": ["components/Header/*"],
+      "@/footer/*": ["components/Footer/*"],
+      "@/dealer/*": ["components/Menus/components/*"],
+      "@/functions/*": ["components/Functions/*"],
+      "@/menus/*": ["components/Menus/*"],
+      "@/cart/*": ["components/Cart/*"],
+      "@/form/*": ["components/Form/*"],
+      "@/filters/*": ["components/Filters/*"],
+      "@/styles/*": ["styles/*"],
+      "@/cookie/*": ["components/Cookie/*"]
+    },
     "plugins": [
       {
         "name": "next"
       }
     ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/layout.js", "app/page.js", "components/layout/header/index.js", "components/layout/footer.js", "components/layout/product-grid-items.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/layout.js",
+    "app/page.js",
+    "components/layout/header/index.js",
+    "components/layout/footer.js",
+    "components/layout/product-grid-items.js"
+  ],
   "exclude": ["node_modules"]
 }
