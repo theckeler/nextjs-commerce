@@ -1,13 +1,12 @@
-import { Carousel } from 'components/carousel';
-import { ThreeItemGrid } from 'components/grid/three-items';
-import { Suspense } from 'react';
+import { ThreeItemGrid } from "components/grid/three-items";
+// import {type LoaderArgs, json} from '@shopify/remix-oxygen';
 
-export const runtime = 'edge';
+export const runtime = "edge";
 
 export const metadata = {
-  description: 'High-performance ecommerce store built with Next.js, Vercel, and Shopify.',
+  description: "High-performance ecommerce store built with Next.js, Vercel, and Shopify.",
   openGraph: {
-    type: 'website'
+    type: "website"
   }
 };
 
@@ -15,10 +14,9 @@ export default function Home() {
   return (
     <>
       <ThreeItemGrid />
-      <Suspense>
+      {/* <Suspense>
         <Carousel />
-        <Suspense></Suspense>
-      </Suspense>
+      </Suspense> */}
     </>
   );
 }

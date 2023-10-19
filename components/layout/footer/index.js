@@ -1,15 +1,15 @@
-import BlockSignUp from './components/SignUp';
-import Terms from './components/Terms';
-import HelpDealerChat from './components/helpdealerchat';
+"use client";
+import HelpDealerChat from "./components/helpdealerchat";
+import BlockSignUp from "./components/signup";
+import Terms from "./components/terms";
 
-import FooterLinks from '@/components/Links/reveal';
-import footerNavData from '@/data/nav-footer.json';
+import FooterLinks from "@/components/links/reveal";
+import footerNavData from "@/data/nav-footer.json";
 
-import Icons from '@/components/icons/';
-import ThemeSwitch from '@/components/themeswitch';
+import Icons from "@/components/icons/";
 
 export default function Footer() {
-  const footerPadding = 'px-4';
+  const footerPadding = "px-4";
 
   return (
     <footer className="pb-20 pt-4 lg:pt-12">
@@ -27,7 +27,7 @@ export default function Footer() {
             <li className="text-sm">
               <a href="?oops=1" className="underline">
                 Give us feedback
-              </a>{' '}
+              </a>{" "}
               on this page.
             </li>
           </ul>
@@ -50,14 +50,14 @@ export default function Footer() {
       <FooterLinks
         {...{
           title: {
-            copy: 'Global Sites',
-            className: ''
+            copy: "Global Sites",
+            className: ""
           },
           links: [
-            { title: 'Canada' },
-            { title: 'Europe' },
-            { title: 'Australia' },
-            { title: 'China' }
+            { title: "Canada" },
+            { title: "Europe" },
+            { title: "Australia" },
+            { title: "China" }
           ],
           className: `max-w-screen-2xl mx-auto items-center sm:justify-center lg:justify-start ${footerPadding}`,
           row: true,
@@ -68,28 +68,28 @@ export default function Footer() {
       <FooterLinks
         {...{
           title: {
-            copy: 'Social',
-            className: 'block sm:hidden'
+            copy: "Social",
+            className: "block sm:hidden"
           },
           links: [
             {
-              title: 'Facebook',
+              title: "Facebook",
               icon: <Icons icon="facebook" className="w-100 mr-1 dark:fill-white" />
             },
             {
-              title: 'LinkedIn',
+              title: "LinkedIn",
               icon: <Icons icon="linkedin" className="w-100 mr-1 dark:fill-white" />
             },
             {
-              title: 'Instagram',
+              title: "Instagram",
               icon: <Icons icon="instagram" className="w-100 mr-1 dark:fill-white" />
             },
             {
-              title: 'Twitter',
+              title: "Twitter",
               icon: <Icons icon="twitter" className="w-100 mr-1 dark:fill-white" />
             },
             {
-              title: 'YouTube',
+              title: "YouTube",
               icon: <Icons icon="youtube" className="w-100 mr-1 dark:fill-white" />
             }
           ],
@@ -102,8 +102,8 @@ export default function Footer() {
       <FooterLinks
         {...{
           title: {
-            copy: 'Terms',
-            className: 'block sm:hidden'
+            copy: "Terms",
+            className: "block sm:hidden"
           },
           className: `max-w-screen-2xl mx-auto ${footerPadding}`,
           component: (
@@ -119,15 +119,15 @@ export default function Footer() {
           <FooterLinks
             {...{
               title: {
-                copy: 'Legal',
-                className: 'block md:hidden'
+                copy: "Legal",
+                className: "block md:hidden"
               },
               links: [
-                { title: 'Privacy Policy' },
-                { title: 'Terms of Use' },
-                { title: 'Online Store Policies' }
+                { title: "Privacy Policy" },
+                { title: "Terms of Use" },
+                { title: "Online Store Policies" }
               ],
-              className: 'max-w-screen-2xl mx-auto',
+              className: "max-w-screen-2xl mx-auto",
               row: true
             }}
           />
@@ -140,12 +140,29 @@ export default function Footer() {
       <div
         className={`col-span-3 mx-auto mt-6 max-w-screen-2xl text-center text-sm font-bold dark:text-white lg:text-left ${footerPadding}`}
       >
-        If you experience any problems accessing this website,{' '}
+        If you experience any problems accessing this website,{" "}
         <br className="hidden sm:block lg:hidden" />
         please call us at 1-877-428-2349 for assistance.
+        {/* <div>
+          <InputButton
+            {...{
+              className: null,
+              padding: "p-3",
+              input: {
+                id: "zipcode-postal-code",
+                placeholder: "Enter Email",
+                name: "email",
+                className: ""
+              },
+              button: {
+                title: "Next",
+                ariaLabel: null,
+                className: "bg-amber-400"
+              }
+            }}
+          />
+        </div> */}
       </div>
-
-      <ThemeSwitch />
     </footer>
   );
 }

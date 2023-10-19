@@ -1,9 +1,17 @@
-'use client';
-import Button from '@/components/buttons/';
+"use client";
+import Button from "@/components/buttons/";
 
-export default function InputButton({ className, input, button, padding = 'p-3', icon = null }) {
+export default function InputButton({
+  id = "",
+  className,
+  input,
+  button,
+  padding = "p-3",
+  icon = null,
+  onClick
+}) {
   return (
-    <ul className={`flex ${className}`}>
+    <ul className={`flex ${className}`} id={id}>
       <li className="grow">
         <input
           required=""
@@ -18,6 +26,7 @@ export default function InputButton({ className, input, button, padding = 'p-3',
         <Button
           aria-label={button.ariaLabel}
           title={button.title}
+          onClick={onClick}
           className={`h-full w-full whitespace-nowrap rounded-r border-0 font-bold uppercase outline-0 ${button.className} ${padding}`}
           icon={icon}
         />
